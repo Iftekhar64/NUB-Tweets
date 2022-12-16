@@ -1,0 +1,46 @@
+{
+  "name": "web_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Iftekharul Alam",
+  "license": "MIT",
+  "scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "file-loader": "^6.2.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "16.13.0",
+    "@material-ui/core": "4.9.8",
+    "@material-ui/icons": "4.9.1",
+    "body-parser": "1.19.0",
+    "compression": "1.7.4",
+    "cookie-parser": "1.4.5",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "express-jwt": "5.3.1",
+    "formidable": "1.2.2",
+    "helmet": "3.22.0",
+    "jsonwebtoken": "8.5.1",
+    "lodash": "4.17.15",
+    "mongoose": "5.9.7",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-hot-loader": "4.12.20",
+    "react-router": "5.1.2",
+    "react-router-dom": "5.1.2",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-middleware": "^5.3.1",
+    "webpack-hot-middleware": "^2.25.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
