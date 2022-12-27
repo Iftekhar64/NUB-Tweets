@@ -64,7 +64,7 @@ export default function Newsfeed () {
     return (
       <Card className={classes.card}>
         <Typography type="title" className={classes.title}>
-          Newsfeed
+          Tweets
         </Typography>
         <Divider/>
         <NewPost addUpdate={addPost}/>
